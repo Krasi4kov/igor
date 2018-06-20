@@ -1,0 +1,36 @@
+body {
+	width: 980px;
+}
+.nicEdit-panelContain {
+width: 172%;
+
+}
+#myInstance1 {
+font-size: 16px;
+background-color: #ccc;
+padding: 3px;
+width: 973px;
+}
+#myInstance1 {
+        border: 2px dashed #0000ff;
+}
+.nicEdit-selected {
+        border: 2px solid #0000ff !important;
+}
+
+.nicEdit-panel {
+	background-color: #fff !important;
+}
+
+.nicEdit-button {
+	background-color: #fff !important;
+}
+.Header {
+	margin-left: 500px;
+	color: coral;
+}
+.editor {
+	margin-left: 500px;
+	color: coral;
+
+}
