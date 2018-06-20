@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Редактор текста!</title>
+</head>
+<body>
+	<style>
+	body {
+		background: #333;
+		color: #fc0;
+
+	}
+	</style>
+
+<div id="menu"></div>
+
+<div id="intro">
+<H4>Редактор Текста!</h4>
+</div>
+<br />
+
+<h4>Первый Редактор!</h4>
+
+<div id="sample">
+	<div id="myArea1" style="width: 300px; height: 100px; border: 1px solid #000;">
+		Пиши  сюда!
+			
+		
+	</div>
+	<button onClick="toggleArea1();">Убрать Редактор</button>
+<br /><br />
+<h4>Второй редактор!</h4>
+<div>
+	<textarea style="width: 300px; height: 100px;" id="myArea2"></textarea>
+	<br />
+	<button onClick="addArea2();">Включить редакторо</button> <button onClick="removeArea2();">Включить режим textarea</button>	
+</div>
+<div style="clear: both;"></div>
+
+<script src="nicEdit.js" type="text/javascript"></script>
+<script>
+var area1, area2;
+
+function toggleArea1() {
+	if(!area1) {
+		area1 = new nicEditor({fullPanel : true}).panelInstance('myArea1',{hasPanel : true});
+	} else {
+		area1.removeInstance('myArea1');
+		area1 = null;
+	}
+}
+
+function addArea2() {
+	area2 = new nicEditor({fullPanel : true}).panelInstance('myArea2');
+}
+function removeArea2() {
+	area2.removeInstance('myArea2');
+}
+
+bkLib.onDomLoaded(function() { toggleArea1(); });
+</script>	
+</div>
+
+</body>
+</html>
