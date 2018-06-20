@@ -2,7 +2,7 @@ var bkExtend=function(){var A=arguments;if(A.length==1){A=[this,A[0]]}for(var B 
 
 
 
-var nicEditorConfig = bkClass.extend({
+var ../img/nicEditorConfig = bkClass.extend({
 	buttons : {
 		'bold' : {name : __('Click to Bold'), command : 'Bold', tags : ['B','STRONG'], css : {'font-weight' : 'bold'}, key : 'b'},
 		'italic' : {name : __('Click to Italic'), command : 'Italic', tags : ['EM','I'], css : {'font-style' : 'italic'}, key : 'i'},
